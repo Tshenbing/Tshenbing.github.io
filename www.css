@@ -1,0 +1,166 @@
+*{
+    margin: 0px;
+    border: 0px;
+    color: white;
+    text-decoration:none;
+}
+
+       /*js汽泡效果*/
+  .wrap {
+    width: 100%;
+    height: 600px;
+    background-image: url(img/mae-mu-XTztXbv6gMs-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+  .bubbles {
+    width: 100%;
+    height: 91%;
+    position: relative;
+    overflow: hidden;
+  }
+  .bubble {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10%;
+    animation: up 8s ease-in-out;
+  }
+  @keyframes up {
+    from {
+      bottom: -10%;
+      opacity: 1;
+    }
+    to {
+      bottom: 110%;
+      opacity: .5;
+    }
+  }
+
+/*导航栏内容*/
+nav{
+    width: 100%;
+    height: 80px;
+    background:#029fd6;
+}
+.nav{
+    width: 32%;
+    height: 100px;
+    margin-left: -24px;
+}
+
+.nav ul li {
+    margin: 18px 20px;
+    font-size: 17px;
+    color: #ffffff;
+    text-decoration:underline;
+    text-decoration: none;
+}
+.logo-tetx h3{
+    color: #ffffff;
+    font-size: 30px;
+}
+.logo-tetx p{
+    color: #ffffff;
+    font-size :17px
+}
+a .f1:hover{
+    font-size: 1.5em; 
+}
+
+ul{
+    list-style: none;
+}
+.f1{
+    float: left;
+}
+
+
+/*头像区样式*/
+.logo-warp{
+    width: 250px;
+    height: 90px;
+    margin-left: 7%;
+    padding-top: 10px;
+}
+.logo-warp .logo-img{
+    margin-top: 6px;
+    margin-right: 18px;
+    width: 55px;
+    height: 55px;
+    background: url(img/cartoon.jpg);
+    background-size: 100%;
+    border-radius: 25%;
+}
+
+
+/*联系我*/
+.card{
+    width: 230px;
+    height: 100px;
+    margin-right: 7%;
+    line-height: 87px;
+    color: #ffffff;
+    float: right;
+}
+.card_1 a{
+       color: white;
+       width: 70px;
+       height: 25px;
+       float: left;
+       margin-top: -67px;
+       margin-left:1135px;
+}
+.card_1 a:hover{
+    color: #00FFFF;
+}
+
+/*banner*/
+.content{
+    width: 100%;
+    height:545px;
+    background: rgb(14, 134, 182);
+    position: relative;
+    overflow: hidden;
+    top:-20px;
+}
+/*渐变字体*/
+#box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: white;
+    transform: translate(-50%,-50%);
+}
+
+.gls h2{
+    width: 859px;
+    height: 85px;
+    position: relative;
+    margin: 0;
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+    top: -370px;
+    left: 400px;
+}
+
+
+h2 span{
+    color: #ff022c;
+}
+.yes{
+    width: 480px;
+    height: 20px;
+    color: #000;
+    position: relative;
+    left: 430px;
+    top: -50px;
+    
+}

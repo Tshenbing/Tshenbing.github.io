@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人博客</title>
+    <link rel="stylesheet" href="www.css">
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" /><!--浏览器添加小图标-->
+</head>
+<body>
+   <!--头部样式-->
+    <nav>
+       <div class="logo-warp f1">
+           <div class="logo-img f1"></div>
+           <div class="logo-tetx f1">
+               <h3>MR.TIAN</h3>
+               <P>TUTO RENYUAN</P>
+           </div>
+       </div>
+
+       <div class="nav f1">
+           <ul>
+   <a href="博客.html"><li class="f1">首页</li></a>
+   <a href="rj.html"><li class="f1">日记</li><a>
+   <a href="gebj.html"><li class="f1">笔记</li></a>
+   <a href="https://www.bilibili.com/"><li class="f1">转载</li></a>  
+           </ul>
+       </div>
+       <div class="card">向前走✰不回头</div>
+      <div class="card_1"><a href="lxw.html">☎联系我</a></div>
+
+    </nav>
+
+    <!--js冒汽泡-->
+    <article class="content">
+        <div id="box">
+        <div class="wrap">
+            <div class="bubbles" num="50" duration="10">
+            </div>
+          </div>
+        
+          <script>
+            (function(w, d) {
+        
+              var bubbles = d.querySelector('.bubbles');
+              var bubblesWidth = bubbles.clientWidth;
+              var num = bubbles.getAttribute('num');
+              var duration = bubbles.getAttribute('duration');
+        
+              bubbleUp();
+              setInterval(bubbleUp, duration * 1000);
+        
+              function bubbleUp() {
+                bubbles.innerHTML = '';
+                for(var i = 0; i < num; i++) {
+                  var bubbleDiv = d.createElement('div');
+                  bubbleDiv.classList.add('bubble');
+                  bubbleDiv.style.cssText = `
+                    transform: translate(${bubblesWidth * Math.random()}px, 0) scale(${5 * Math.random()});
+                    animation: up ${duration * Math.random() + 1}s ease-in-out;
+                  `
+                  bubbles.appendChild(bubbleDiv);
+                };
+              };
+        
+            })(window, document);
+          </script>
+    </div>
+</article>
+     <!--渐变字体-->
+       <div class="gls">
+       <h2><span>t</span>ian sh<span>e</span>ng <span>bi</span>ng</h2>
+       </div> 
+        <div class="yes">Design by：tianshenbing 备案号：湘ICP备14011335号-2</div>
+</body>
+</html>
